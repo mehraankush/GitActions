@@ -1,7 +1,17 @@
-name:"Label new pull request"
-description:"add a label when new PR is opened"
-author:"Ankush Mehra"
+name: "Hello"
 
-runs:
-  using:"node16"
-  main:"dist/index.js"
+on:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Greet
+        uses: ./
+        with:
+          who-to-greet: 'Mona the Octocat'
+          greeting: 'Hello'
+  
