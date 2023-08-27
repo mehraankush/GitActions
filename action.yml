@@ -2,5 +2,5 @@ name: "Label new pull request"
 description: "Add a label when a new PR is opened"
 author: "Ankush Mehra"
 runs:
-  using: "node16"
-  main: "dist/index.js"
+  using: 'node16'
+  main: 'dist/index.js'
